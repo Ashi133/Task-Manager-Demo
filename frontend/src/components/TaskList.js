@@ -5,12 +5,17 @@ import { toast } from "react-toastify";
 import axios from "axios";
 import loadingImg from "../assets/loader.gif";
 
+
 const TaskList = () => {
   const [task, setTasks] = useState([]);
   const [completedTasks, setCompletedTasks] = useState([]);
   const [isloading, SetIsloading] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
   const [taskID, setTaskID] = useState("");
+
+function totaltiming(){
+
+}
 
   const [formData, setFromData] = useState({
     name: "",
@@ -125,7 +130,7 @@ const TaskList = () => {
           </p>
         </div>
       )}
-
+      <button onClick={totaltiming}>Total Timing</button>
       <hr />
       {
         isloading && (
